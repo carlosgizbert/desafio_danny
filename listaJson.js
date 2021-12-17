@@ -37,6 +37,26 @@ function criarTabela(personagens) {
     return tr
   })
   const tabela = document.createElement('table')
+
+  // cria título da tabela
+  const thNome = document.createElement('th')
+  thNome.innerHTML = 'Nome'
+
+  const thKd = document.createElement('th')
+  thKd.innerHTML = 'Kd'
+
+  const thTaxaVitoria = document.createElement('th')
+  thTaxaVitoria.innerHTML = 'Taxa de Vítória'
+
+  const thAcoes = document.createElement('th')
+  thAcoes.innerHTML = 'Ações'
+
+  tabela.appendChild(thNome)
+  tabela.appendChild(thKd)
+  tabela.appendChild(thTaxaVitoria)
+  tabela.appendChild(thAcoes)
+
+  // cria linhas, insere e numera ID
   let qtdLinhas = 0
   linha.forEach(linhas => {
     linhas.setAttribute('id', 'linha' + qtdLinhas++)

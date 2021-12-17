@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 * {
   margin: 0;
 }
 body {
   background-color: rgb(241, 241, 241);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
 }
 table {
   margin: 2rem auto;
